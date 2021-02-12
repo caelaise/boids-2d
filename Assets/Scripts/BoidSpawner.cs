@@ -14,7 +14,7 @@ public class BoidSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < number + 1; i++)
+        for (int i = 0; i < number; i++)
         {
             GameObject boidObject = Instantiate(prefab, new Vector2(Random.Range(-16, 16), Random.Range(-9, 9)), Quaternion.identity) as GameObject;
             Boid boid = boidObject.GetComponent<Boid>();
